@@ -1,0 +1,26 @@
+sheet,column,description,type,expected_values_or_range,analysis_role,public_release_note
+05_分析随机顺序,受试者编号,Participant code,string,P01-P20,cluster and grouping,Replace with non-identifying codes before release
+05_分析随机顺序,分组,Participant group,string,医护人员 or 非医学对照,fixed effect,Retain only if approved by the consent and ethics plan
+05_分析随机顺序,光源编号,Light-source condition,string,L1/L2/L3/L4,primary exposure,Retain
+05_分析随机顺序,光源顺序位次,Ordinal position of the light-source condition,integer,1.0-4,fixed effect,Retain
+05_分析随机顺序,任务类型,Color-recognition task type,string,study-defined task categories,fixed effect,Retain; remove free-text descriptions if identifying
+05_分析随机顺序,样本编号,Stimulus/sample code,string,study-defined sample codes,random intercept,Retain only as non-identifying codes
+05_分析随机顺序,标准答案大类,Recorded reference response category,string,study-defined response categories,required for scoring normalization,Retain
+05_分析随机顺序,受试者答案,Recorded participant response category,string,study-defined response labels,required for scoring normalization,Retain exact recorded label
+05_分析随机顺序,原始计分1_0,Optional pre-normalization score,integer,0 or 1,scoring audit baseline,Retain when present
+05_分析随机顺序,是否正确1_0,Recognition accuracy after response-label normalization,integer,0 or 1,primary outcome,Recomputed by response_scoring.py
+05_分析随机顺序,反应时间s,Response time in seconds,numeric,greater than 0,secondary outcome,Retain
+05_分析随机顺序,信心评分1_5,Trial-level confidence rating,integer,1.0-5,secondary outcome,Retain
+07_主观评分记录,心理需求0_10,Mental demand rating,integer,0–10,Raw NASA-TLX dimension,Retain
+07_主观评分记录,体力需求0_10,Physical demand rating,integer,0–10,Raw NASA-TLX dimension,Retain
+07_主观评分记录,时间压力0_10,Temporal demand rating,integer,0–10,Raw NASA-TLX dimension,Retain
+07_主观评分记录,表现不满意0_10,Performance dissatisfaction rating,integer,0–10,Raw NASA-TLX dimension,Retain; document direction
+07_主观评分记录,努力程度0_10,Effort rating,integer,0–10,Raw NASA-TLX dimension,Retain
+07_主观评分记录,挫败感0_10,Frustration rating,integer,0–10,Raw NASA-TLX dimension,Retain
+07_主观评分记录,TLX平均分,Recorded Raw NASA-TLX mean,numeric,0-10,quality-control comparison,Recompute from six dimensions
+07_主观评分记录,眼干涩1_5,Eye dryness rating,integer,1.0-5,visual-fatigue sum,Retain
+07_主观评分记录,眼酸胀1_5,Eye strain rating,integer,1.0-5,visual-fatigue sum,Retain
+07_主观评分记录,眩光不适1_5,Glare discomfort rating,integer,1.0-5,visual-fatigue sum,Retain
+07_主观评分记录,视觉疲劳总分,Recorded visual-fatigue sum,numeric,3.0-15,quality-control comparison,Recompute from three items
+07_主观评分记录,颜色真实感1_5,Perceived color realism,integer,1.0-5,descriptive outcome,Retain
+07_主观评分记录,整体舒适度1_5,Overall visual comfort,integer,1.0-5,descriptive outcome,Retain
