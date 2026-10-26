@@ -1,0 +1,56 @@
+# Raw or participant-level study data
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.ods
+*.sav
+*.dta
+*.parquet
+*.feather
+*.sqlite
+*.db
+data/
+private/
+raw_data/
+participant_data/
+
+# Generated analysis results and record-level scoring audits
+results/
+figures/
+outputs/
+response_scoring_changes.csv
+response_scoring_quality.json
+Figure3_source_values.csv
+bayesian_model_coefficients_all.csv
+bayesian_light_effect_sensitivities.csv
+bayesian_model_metadata.json
+trial_descriptives_by_light.csv
+trial_descriptives_by_light_task.csv
+response_time_gee_fixed_effects.csv
+response_time_model_metadata.json
+confidence_summary_by_light.csv
+subjective_summary_by_light.csv
+subjective_summary_by_light_group.csv
+subjective_gee_fixed_effects.csv
+subjective_quality_checks.json
+Figure3.png
+Figure3.pdf
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Local Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
