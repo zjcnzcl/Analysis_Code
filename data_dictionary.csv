@@ -1,4 +1,4 @@
-sheet,column,description,type,expected_values_or_range,analysis_role,public_release_note
+﻿sheet,column,description,type,expected_values_or_range,analysis_role,public_release_note
 05_分析随机顺序,受试者编号,Participant code,string,P01-P20,cluster and grouping,Replace with non-identifying codes before release
 05_分析随机顺序,分组,Participant group,string,医护人员 or 非医学对照,fixed effect,Retain only if approved by the consent and ethics plan
 05_分析随机顺序,光源编号,Light-source condition,string,L1/L2/L3/L4,primary exposure,Retain
